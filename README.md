@@ -132,6 +132,7 @@ php artisan serve
 This was a group project. Everyone below worked on it:
 
 | Name | Role |
+|---|---|
 | [Pasan Athuluwage](https://github.com/MinjanaAP) | Project Manager & Full Stack Developer |
 | [Ishari Abesooriya](https://github.com/Ishari-928) | Business Analyst & Full Stack Developer |
 | [Wethma Sithumini](https://github.com/wethmasithumini) | Full Stack Developer |
@@ -143,7 +144,7 @@ I worked on this in two roles - Business Analyst and full-stack developer.
 
 **As Business Analyst**
 
-I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from — project scope, user stories, and acceptance criteria.
+I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from - project scope, user stories, and acceptance criteria.
 
 I also wrote and maintained the project's SRS document, covering the functional and non-functional requirements across all eleven ad categories, the admin and super-admin role definitions, the reporting system, and the paid advertisement rules.
 
