@@ -2,7 +2,7 @@
 
 **FindIt** is a web platform where people can post classified ads, and admins can manage and filter everything from a dashboard. Ads can be filtered by district, town, price range, and category.
 
-Built with Laravel on both sides - the backend runs as an API, and the frontend consumes it. This was our second-year industry-level project, done with a real client.
+Built with Laravel on both sides — the backend runs as an API, and the frontend consumes it. This was our second-year industry-level project, done with a real client.
 
 ## About the project
 
@@ -28,13 +28,13 @@ We approached **Nemo Technologies (Pvt) Ltd** looking for a real project to work
 
 The repo is split into two Laravel applications.
 
-### `backend/` — the API
+### `backend/` - the API
 
 Handles authentication, ad management, and all the filtering logic.
 
 | Folder | What's in it |
 |---|---|
-| `app/` | Controllers, models, middleware — the core logic |
+| `app/` | Controllers, models, middleware - the core logic |
 | `config/` | Config for mail, database, sessions, and so on |
 | `database/` | Migrations, factories, seeders |
 | `public/` | Entry point (`index.php`) and public assets |
@@ -100,7 +100,7 @@ And in another terminal:
 php artisan serve
 ```
 
-> Note: `.env` files aren't committed to this repo — they hold secrets. Copy `.env.example` and fill in your own values.
+> Note: `.env` files aren't committed to this repo - they hold secrets. Copy `.env.example` and fill in your own values.
 
 ## API endpoints
 
@@ -132,11 +132,10 @@ php artisan serve
 This was a group project. Everyone below worked on it:
 
 | Name | Role |
-|---|---|
 | [Pasan Athuluwage](https://github.com/MinjanaAP) | Project Manager & Full Stack Developer |
 | [Ishari Abesooriya](https://github.com/Ishari-928) | Business Analyst & Full Stack Developer |
-| [Wethma Sithumini](https://github.com/wethmasithumini) | Developer |
-| [Ashini Hasara](https://github.com/ashinihasara) | Developer |
+| [Wethma Sithumini](https://github.com/wethmasithumini) | Full Stack Developer |
+| [Ashini Hasara](https://github.com/ashinihasara) | Full Stack Developer |
 
 ### My contribution
 
@@ -144,13 +143,13 @@ I worked on this in two roles - Business Analyst and full-stack developer.
 
 **As Business Analyst**
 
-I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from - project scope, user stories, and acceptance criteria.
+I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from — project scope, user stories, and acceptance criteria.
 
 I also wrote and maintained the project's SRS document, covering the functional and non-functional requirements across all eleven ad categories, the admin and super-admin role definitions, the reporting system, and the paid advertisement rules.
 
 Tools: Figma for translating requirements into interface designs, Jira for tracking work, Bitbucket for version control during development.
 
-**As a Full-Stack developer**
+**As a developer**
 
 I owned these features end to end - frontend, backend API, and the admin panel side of each:
 
@@ -158,6 +157,7 @@ I owned these features end to end - frontend, backend API, and the admin panel s
 - **Ad deletion** - the delete flow across all advertisement types
 - **Favourites** - letting users save ads to a favourites list
 - **Ratings** - adding and removing ratings on advertisements
+- **Social sharing** - share buttons letting users post an ad straight to WhatsApp or Facebook
 
 Built with Laravel and Bootstrap on the frontend, Laravel API on the backend.
 
