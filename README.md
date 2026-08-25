@@ -1,8 +1,8 @@
-# FindIt — Buy, Sell, Discover
+# FindIt - Buy, Sell, Discover
 
 **FindIt** is a web platform where people can post classified ads, and admins can manage and filter everything from a dashboard. Ads can be filtered by district, town, price range, and category.
 
-Built with Laravel on both sides — the backend runs as an API, and the frontend consumes it. This was our second-year industry-level project, done with a real client.
+Built with Laravel on both sides - the backend runs as an API, and the frontend consumes it. This was our second-year industry-level project, done with a real client.
 
 ## About the project
 
@@ -140,11 +140,11 @@ This was a group project. Everyone below worked on it:
 
 ### My contribution
 
-I worked on this in two roles — Business Analyst and full-stack developer.
+I worked on this in two roles - Business Analyst and full-stack developer.
 
 **As Business Analyst**
 
-I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from — project scope, user stories, and acceptance criteria.
+I was the main point of contact between the team, our supervisors, and the client at Nemo Technologies. That meant sitting in on requirement discussions, working out what the client actually needed, and turning that into something the team could build from - project scope, user stories, and acceptance criteria.
 
 I also wrote and maintained the project's SRS document, covering the functional and non-functional requirements across all eleven ad categories, the admin and super-admin role definitions, the reporting system, and the paid advertisement rules.
 
@@ -152,12 +152,12 @@ Tools: Figma for translating requirements into interface designs, Jira for track
 
 **As a Full-Stack developer**
 
-I owned these features end to end — frontend, backend API, and the admin panel side of each:
+I owned these features end to end - frontend, backend API, and the admin panel side of each:
 
-- **Paid advertisement module** — create, edit, and delete paid ads, including the payment gateway integration
-- **Ad deletion** — the delete flow across all advertisement types
-- **Favourites** — letting users save ads to a favourites list
-- **Ratings** — adding and removing ratings on advertisements
+- **Paid advertisement module** - create, edit, and delete paid ads, including the payment gateway integration
+- **Ad deletion** - the delete flow across all advertisement types
+- **Favourites** - letting users save ads to a favourites list
+- **Ratings** - adding and removing ratings on advertisements
 
 Built with Laravel and Bootstrap on the frontend, Laravel API on the backend.
 
