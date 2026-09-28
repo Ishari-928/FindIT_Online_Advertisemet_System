@@ -137,7 +137,7 @@ This was a group project. Everyone below worked on it:
 | Pasan Athuluwage | Project Manager & Full Stack Developer |
 | [Wethma Sithumini](https://github.com/wethmasithumini) | Full Stack Developer |
 | [Ashini Hasara](https://github.com/ashinihasara) | Full Stack Developer |
-| [Basuru Jithmal] | Full Stack Developer |
+| Basuru Jithmal | Full Stack Developer |
 
 ### My contribution
 
