@@ -1,141 +1,74 @@
-# Classified Ads Management System - Frontend
+# FindIt - Frontend
 
-This is the frontend for the **Classified Ads Management System**, developed using **Laravel**. The frontend allows users to view, filter, and interact with the ads posted by users, and administrators can manage the ads through a dynamic admin panel.
+This is the user interface for **FindIt**, a classified ads platform built as our second-year project with **Nemo Technologies (Pvt) Ltd**. People can browse and post ads, while administrators use a dashboard to review listings and manage the platform.
 
-The frontend uses **Laravel Blade** for templating, **Bootstrap** for responsive design, and **AJAX** for dynamic content loading. It interacts with the backend API to display and manage classified ads.
+The frontend is a Laravel application built with Blade, Bootstrap, and AJAX. It consumes the separate Laravel API in [`backend/`](../backend/README.md). See the [main project README](../README.md) for the full project story, team, and contributions.
 
-## Table of Contents
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Frontend Structure](#frontend-structure)
-- [Technologies Used](#technologies-used)
-- [Contributions & Credits](#contributions--credits)
+## What it does
 
-## Installation
+**For users**
 
-### Requirements
-- PHP >= 8.0
-- Laravel 8.x or above
-- Composer
-- Node.js (for running frontend assets)
+- Browse ads and view their details
+- Filter listings by district, town, price range, and category
+- Sign in and post free or paid ads with images and details
+- Save favourites, rate ads, and share listings
 
-### Step-by-Step Installation
+**For admins**
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MinjanaAP/Software-Project-2nd-Year.git
-   cd frontend
+- Review and manage ads through the dashboard
+- Search and filter listings
+- Manage user accounts according to their role
 
+## Project structure
 
-2. **Install Dependencies**
-   Run the following command to install the required dependencies via Composer:
-   ```bash
-   composer install
-   ```
+| Folder | What's in it |
+|---|---|
+| `app/` | Frontend controllers, models, and application logic |
+| `config/` | Frontend application settings |
+| `public/` | Public images, CSS, JavaScript, and the web entry point |
+| `resources/` | Blade templates and source assets |
+| `routes/` | Web routes for frontend pages |
+| `tests/` | Frontend tests |
 
-3. **Set Up Environment Variables**
-   Copy the `.env.example` file to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
+## Getting it running
 
-4. **Configure Environment Variables**
-   Open the `.env` file and update the necessary environment variables like:
-   - `APP_URL`: URL of your frontend (e.g., `http://localhost`).
-   - `BACKEND_URL`: URL of the backend API (e.g., `http://localhost:8008`).
+You will need PHP, Composer, Node.js/npm, and a running copy of the [backend](../backend/README.md). Use the versions required by this application's `composer.json` and `package.json`.
 
-5. **Generate Application Key**
-   Run the following Artisan command to generate the application key:
-   ```bash
-   php artisan key:generate
-   ```
+**1. Clone the project and enter the frontend app**
 
-6. **Install Frontend Dependencies**
-   Run the following command to install frontend dependencies using npm:
-   ```bash
-   npm install
-   ```
-
-7. **Compile Assets**
-   After installing the dependencies, compile the frontend assets:
-   ```bash
-   npm run dev
-   ```
-
-8. **Run the Application**
-   After everything is set up, run the Laravel server using:
-   ```bash
-   php artisan serve
-   ```
-   The frontend should now be running on `http://127.0.0.1:8000`.
-
-## Environment Variables
-
-This project requires the following environment variables to be set up in the `.env` file:
-
-- **APP_NAME**: The name of the application.
-- **APP_ENV**: The environment the application is running in (e.g., local, production).
-- **APP_KEY**: Application key (generated using `php artisan key:generate`).
-- **APP_URL**: URL for the frontend application (e.g., `http://localhost`).
-- **BACKEND_URL**: URL for the backend API (e.g., `http://localhost:8000`).
-
-## Frontend Structure
-
-The Laravel frontend is organized as follows:
-
-```
-/classified-ads-frontend
-│
-├── /app
-│   ├── /Http
-│   │   ├── /Controllers         # All controller classes (e.g., AdminController, AdController)
-│   ├── /Models                  # Eloquent models (e.g., Ad, Category, User)
-│   └── /Providers               # Service providers
-│
-├── /resources
-│   ├── /views                   # Blade views for displaying pages
-│   ├── /js                      # JavaScript files (AJAX calls for dynamic content)
-│   └── /sass                    # SCSS or CSS files
-│
-├── /public                       # Publicly accessible files like images, scripts
-│   └── /uploads                  # Folder for uploaded images, documents, etc.
-│
-├── /routes
-│   └── web.php                  # Web routes definitions for frontend views
-│
-├── /resources/lang               # Language files for translations
-├── /config                       # Configuration files for frontend
-└── .env                           # Environment variables
+```sh
+git clone https://github.com/Ishari-928/FindIT_Online_Advertisemet_System.git
+cd FindIT_Online_Advertisemet_System/frontend
 ```
 
-### Key Files:
-- **/app/Http/Controllers/AdController.php**: Handles displaying ads on the frontend.
-- **/resources/views/**: Contains the Blade views that structure the frontend pages (e.g., home page, ads listing, ad details, admin panel).
-- **/resources/js/**: JavaScript files for dynamic interaction using AJAX (e.g., handling ad filtering).
-- **/routes/web.php**: Contains all routes for serving Blade views and handling frontend logic.
+**2. Install dependencies and set up the environment**
 
-## Technologies Used
-
-- **Laravel**: PHP framework for building the frontend.
-- **Bootstrap**: CSS framework used for responsive design.
-- **AJAX/jQuery**: Used to dynamically load ads and manage interactions without refreshing the page.
-- **Blade**: Templating engine used to structure the HTML views.
-- **SASS/SCSS**: CSS preprocessor for styling.
-- **Laravel Mix**: Asset compilation tool for managing frontend assets like JavaScript, CSS, and images.
-
-## Contributions & Credits
-
-This project is a collaboration with **Nemo Technologies Pvt. Ltd.**, which provided support and guidance throughout the development process.
-
-### Team Members:
-- **[Basuru Jithmal](https://github.com/basurujithmal)** - Developer
-- **[Pasan Athuluwage](https://github.com/MinjanaAP)** - PM & Developer
-- **[Ishari Abesooriya](https://github.com/ishariabesooriya)** - BA & Developer
-- **[Wethma Sithumini](https://github.com/wethmasithumini)** - Developer
-- **[Ashini Hasara](https://github.com/ashinihasara)** - Developer
-
----
-
-### Special Thanks to **Nemo Technologies Pvt. Ltd.** for their collaboration and support throughout the project.
+```sh
+composer install
+cp .env.example .env
+php artisan key:generate
+npm install
 ```
 
+Set `APP_URL` to the frontend address. Configure the backend API URL in `.env` using the variable expected by this application's configuration (the previous frontend setup uses `BACKEND_URL`). Keep the frontend and backend URLs consistent with the ports you start below.
+
+**3. Build assets and start the frontend**
+
+```sh
+npm run dev
+php artisan serve --port=8000
+```
+
+Run `npm run dev` in its own terminal if it stays active. Open `http://127.0.0.1:8000` after the backend is running on port `8008`.
+
+> `.env` contains local settings and secrets. Create it from `.env.example`; do not commit it.
+
+## Technologies
+
+Laravel, Blade, Bootstrap, JavaScript, and AJAX. The frontend calls the backend API for authentication, listings, and administrative workflows.
+
+## The team
+
+This app was built by Ishari Abesooriya, Pasan Athuluwage, Wethma Sithumini, Ashini Hasara, and Basuru Jithmal. See the [main README](../README.md#the-team) for roles and profile links.
+
+Thanks to **Nemo Technologies (Pvt) Ltd** for collaborating with us on the project.
