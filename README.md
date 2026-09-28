@@ -134,7 +134,7 @@ This was a group project. Everyone below worked on it:
 | Name | Role |
 |---|---|
 | [Ishari Abesooriya](https://github.com/Ishari-928) | Business Analyst & Full Stack Developer |
-| [Pasan Athuluwage] | Project Manager & Full Stack Developer |
+| Pasan Athuluwage | Project Manager & Full Stack Developer |
 | [Wethma Sithumini](https://github.com/wethmasithumini) | Full Stack Developer |
 | [Ashini Hasara](https://github.com/ashinihasara) | Full Stack Developer |
 | [Basuru Jithmal] | Full Stack Developer |
